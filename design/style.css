@@ -18,7 +18,7 @@ body {background-color: lightgrey;}
     align-content: center;
     
 
-  }
+}
 
   .cell {
     
@@ -67,5 +67,14 @@ body {background-color: lightgrey;}
     color: lightgray;
     }
 
+
+  /* for mobile */
+  @media only screen and (max-width: 375px)
+    {
+     
+      .container {grid-template-columns: 310px; grid-template-rows: 270px 230px 230px; padding-top: 50px;}
+      .cell-1{grid-column-start: 1; grid-column-end: 1;}
+      .cell{box-shadow: none;}
+    }
 
  
